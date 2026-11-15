@@ -1,63 +1,42 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>NIJI COOL</title>
-<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;800&family=Fraunces:wght@600;800&display=swap" rel="stylesheet">
-<style>
-:root{--bg:#f4f9fc;--card:#fff;--ink:#0a2236;--mut:#52687a;--line:#d3e3ec;--cool:#1c8fc4;--ember:#e0703a;--brass:#b8923f;--hero:#07182a;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
-@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#07182a;--card:#0d2740;--ink:#e6f3fa;--mut:#9db6c6;--line:#1b3a57;--hero:#030d18}}
-:root[data-theme=dark]{--bg:#07182a;--card:#0d2740;--ink:#e6f3fa;--mut:#9db6c6;--line:#1b3a57;--hero:#030d18}
-html{scroll-padding-top:env(safe-area-inset-top,0px)}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Cairo,system-ui,sans-serif;line-height:1.8}
-h1,h2,h3{font-family:Fraunces,Cairo,serif;line-height:1.3;margin:0 0 .5em}
-a{color:var(--cool)}
-header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--hero);color:#fff;display:flex;align-items:center;gap:.6rem;padding:.6rem 1rem;flex-wrap:wrap}
-body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--hero);z-index:21}
-.logo{font-family:Fraunces,serif;font-weight:800;font-size:1.4rem;letter-spacing:.04em;background:linear-gradient(90deg,#7fd3f5,#f0a470);-webkit-background-clip:text;background-clip:text;color:transparent;margin-inline-end:auto}
-header button,header select{background:#ffffff18;color:#fff;border:1px solid #ffffff40;border-radius:8px;padding:.25rem .6rem;font:inherit;font-size:.85rem;cursor:pointer}
-header select option{color:#000}
-nav{display:flex;gap:1rem;overflow-x:auto;width:100%;font-size:.9rem}nav a{color:#cfe6f2;text-decoration:none;white-space:nowrap}
-.hero{background:linear-gradient(135deg,var(--hero) 55%,#4a2a1a);color:#fff;padding:3rem 1.2rem;text-align:center}
-.hero h1{font-size:clamp(1.8rem,6vw,3rem)}.hero p{max-width:60ch;margin:0 auto 1rem;color:#cfe6f2}
-.clock{font-size:.85rem;color:#e9c98a}
-.btn{display:inline-block;background:var(--ember);color:#fff;border:0;border-radius:10px;padding:.55rem 1.1rem;font:inherit;font-weight:600;text-decoration:none;cursor:pointer}
-.btn.alt{background:transparent;border:1px solid var(--cool);color:var(--cool)}
-main{max-width:980px;margin:auto;padding:1.5rem 1rem}
-section{margin:2.5rem 0}
-.tags{display:flex;gap:.5rem;flex-wrap:wrap;margin:.8rem 0}.tag{border:1px solid var(--line);background:var(--card);border-radius:99px;padding:.15rem .8rem;font-size:.85rem;cursor:pointer;color:var(--ink)}.tag.on{background:var(--cool);color:#fff;border-color:var(--cool)}
-input,textarea,select.f{width:100%;padding:.6rem;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--ink);font:inherit;margin:.25rem 0}
-.grid{display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(270px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:1.1rem}
-.card .cat{color:var(--brass);font-size:.8rem;font-weight:600}
-.ad{border:1px dashed var(--line);color:var(--mut);text-align:center;padding:1rem;border-radius:12px;font-size:.85rem;margin:1.5rem 0}
-.row{display:flex;gap:.5rem;align-items:center;flex-wrap:wrap}
-details{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:.6rem .9rem;margin:.4rem 0}summary{cursor:pointer;font-weight:600}
-.qa small,.cm small{color:var(--mut)}
-footer{background:var(--hero);color:#cfe6f2;text-align:center;padding:2rem 1rem;font-size:.9rem}footer a{color:#e9c98a}
-#istg{position:fixed;inset-inline-start:12px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--hero);color:#e9c98a;border:1px solid var(--brass);border-radius:99px;padding:.3rem .8rem;font-size:.72rem;max-width:230px;box-shadow:0 4px 14px #0005;transition:opacity .6s}
-#adm{display:none;position:fixed;inset:0;z-index:40;background:var(--bg);overflow:auto;padding:calc(1rem + env(safe-area-inset-top,0px)) 1rem 2rem}
-#adm.open{display:block}.tabs{display:flex;gap:.4rem;overflow-x:auto;margin:1rem 0}
-.stat{display:grid;grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:.7rem}.stat div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:.8rem}.stat b{display:block;font-size:1.5rem}
-.tbl{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.88rem}td,th{border-bottom:1px solid var(--line);padding:.4rem;text-align:start}
-:focus-visible{outline:3px solid var(--ember);outline-offset:2px}
-</style>
-</head>
-<body>
-<header>
- <span class="logo">NIJI COOL</span>
- <select id="lang" aria-label="Language"><option value="ar">العربية</option><option value="fr">Français</option><option value="en">English</option></select>
- <button id="theme" aria-label="Theme">◐</button>
- 
- <nav><a href="#articles" data-t="nArt"></a><a href="#qa" data-t="nQa"></a><a href="#support" data-t="nSup"></a><a href="#ads" data-t="nAds"></a><a href="#contact" data-t="nCon"></a></nav>
-</header>
+أنشئ لي موقع مدونة احترافياً فخماً باسم NIJI COOL في ملف HTML واحد (index.html) يعمل على GitHub Pages، متخصصاً في التبريد والتدفئة والأجهزة الكهرومنزلية والتبريد المركزي.
 
-<div class="hero">
- <h1 data-t="hTitle"></h1><p data-t="hSub"></p>
- <div class="clock" id="clock"></div><br>
- <a class="btn" id="waTop" target="_blank" rel="noopener" data-t="wa"></a>
-</div>
+## الهوية والتصميم
+- اللغات: عربي (افتراضي، RTL) وفرنسي وإنجليزي، مع زر تبديل، وتُترجم كل النصوص والمقالات.
+- ألوان جديدة: خلفية داكنة أخضر بحري عميق (#0b2b30)، لون أساسي نعناعي جليدي (#8fe3d6)، لون ثانوي نحاسي دافئ (#d98b4a)، ولون ذهبي هادئ للتفاصيل الفخمة. ووضع فاتح وداكن.
+- الواجهة الرئيسية (Hero): كلمة NIJI COOL بخط عريض كبير جداً وشبه شفافة (opacity حوالي 0.2) في الخلفية، وفوقها عنوان وزر واتساب. وخلفية الواجهة رسم أو صورة لأجهزة تبريد وتدفئة (مكيف سبليت، ثلاجة، مدفأة، مشعّ، تشيلر) شبه شفافة (opacity حوالي 0.25) مع تدرج لوني داكن. استعمل رسوماً SVG مضمّنة داخل الملف حتى لا تتعطل الصور.
+- متجاوب مع الهاتف أولاً، خط عربي جميل (Cairo أو Tajawal)، وحركات خفيفة فقط.
 
-<main>
-<section id="articles">
+## بيانات التواصل (في الأعلى والأسفل)
+- واتساب: 0558444691 (رابط wa.me/213558444691)
+- إيميل: www.niji01@gmail.com
+- فيسبوك: NIJI COOL
+
+## المحتوى (عميق ودقيق ومترجم بثلاث لغات)
+كل مقالة لها عنوان وتصنيف ووسوم وتاريخ، ولا تخترع أرقاماً غير مؤكدة. اذكر أن القيم تختلف حسب الشركة المصنّعة، ونبّه إلى استشارة فني.
+1. الأعطال والحلول: المكيف لا يبرّد، تسرب الماء، روائح، أصوات، تجمد الثلج، ضعف التدفئة، فصل القاطع، رموز الأعطال العامة (مع التنبيه لمراجعة دليل كل ماركة).
+2. الثلاجات والفريزر: لا تبرّد، جليد زائد، ضجيج، تسرب ماء، درجات الحرارة المناسبة.
+3. التدفئة: المكيف الحار/بارد، المدافئ الغازية والكهربائية وزيت المشعّ، التدفئة المركزية والمراجل، سخان الماء، وسلامة أول أكسيد الكربون.
+4. التبريد المركزي: التشيلر، VRF، المجاري الهوائية، المبرّدات (R22 وR410A وR32)، والصيانة الدورية.
+5. دليل الشراء: أنواع الأجهزة، حساب القدرة BTU، إنفرتر وغير إنفرتر، كفاءة الطاقة EER وSEER.
+6. نصائح: التوفير في الكهرباء، الصيانة قبل الصيف والشتاء، جودة الهواء والرطوبة، والسلامة الكهربائية.
+7. قسم "الأجهزة وأسماؤها": جدول بأنواع الأجهزة بالعربية والفرنسية والإنجليزية (مكيف سبليت، شباك، كاسيت، متنقل، مجاري هواء، تشيلر، مضخة حرارية، ثلاجة، فريزر، مدفأة، مشعّ، مرجل، سخان).
+8. قسم "قطع الغيار وأسماؤها" بثلاث لغات مع وظيفة كل قطعة وأعراض تلفها: الضاغط، المكثف، المبخّر، صمام التمدد أو الأنبوب الشعري، مجفف الفلتر، الصمام العاكس رباعي الاتجاهات، محرك المروحة الداخلي والخارجي، مكثف التشغيل والبدء، الكونتاكتور، اللوحة الإلكترونية، حساس الحرارة، ريموت ومستقبل الإشارة، محرك الريشة، مضخة التصريف، مفتاح الضغط، الثرموستات، سخان إذابة الجليد، جلدة الباب، مرحل البدء وحماية الضاغط، الثرموكوبل، قطب الإشعال، صمام الغاز، مضخة التدوير، وعاء التمدد، ومقياس الضغط.
+- مع بحث وتصنيفات وفلتر حسب اللغة والتصنيف، وأزرار مشاركة، ومقالات ذات صلة.
+
+## الميزات
+- قسم سؤال وجواب، ومركز دعم (نموذج مشكلة)، وتعليقات وإعجابات على كل مقال.
+- جاهز للإعلانات المدفوعة: مساحات إعلانية في أعلى الصفحة وبين المقالات وجانبها، وصفحة "أعلن معنا"، وجاهز للصق كود AdSense.
+- التاريخ والوقت بحسب المنطقة الزمنية لموقع الزائر.
+- أيقونة صغيرة عائمة بخط صغير تتبدل فيها عبارات استغفار كصدقة جارية (أستغفر الله العظيم وأتوب إليه، سبحان الله وبحمده...).
+- SEO: عناوين وأوصاف meta وبيانات Open Graph لكل لغة.
+
+## لوحة الأدمن (تظهر لي وحدي بعد تسجيل الدخول)
+تسجيل دخول بالبريد وكلمة السر عبر Firebase Authentication، ولا يراها أحد غيري. وأقسامها منفصلة:
+نظرة عامة، الزيارات، الإعجابات، التعليقات (حذف وإدارة)، الأسئلة (الرد عليها ونشرها)، تذاكر الدعم، المبيعات والمشتريات والأرباح (إضافة وحذف)، الإعلانات، المقالات (إضافة وتعديل)، والإعدادات.
+
+## التقنية
+- Firebase Firestore وAuthentication بهذه الإعدادات:
+  apiKey: "AIzaSyBwZMPW-J9wWO4p3RxGRF4MpRAARoqxZ1w", authDomain: "niji-cool.firebaseapp.com", projectId: "niji-cool", storageBucket: "niji-cool.firebasestorage.app", messagingSenderId: "92675668826", appId: "1:92675668826:web:2f4a06a5badef23b421163"
+- بريد الأدمن: www.niji01@gmail.com. القواعد تسمح للجميع بكتابة التعليقات والأسئلة والإعجابات والزيارات، وتحصر قراءة الإعجابات والزيارات والتذاكر والمبيعات بالأدمن.
+- ملف واحد بلا أدوات بناء، ويجب أن يعرض النصوص حتى لو فشل الاتصال بـ Firebase.
+- اختبر الكود قبل التسليم بحيث لا تبقى الصفحة فارغة.
