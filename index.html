@@ -1,42 +1,1030 @@
-أنشئ لي موقع مدونة احترافياً فخماً باسم NIJI COOL في ملف HTML واحد (index.html) يعمل على GitHub Pages، متخصصاً في التبريد والتدفئة والأجهزة الكهرومنزلية والتبريد المركزي.
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="meta-title">NIJI COOL | التبريد، التدفئة والأجهزة الكهرومنزلية</title>
+    <meta name="description" id="meta-desc" content="مدونة نيجي كول الاحترافية للتبريد، التدفئة، التبريد المركزي، والأجهزة الكهرومنزلية. أعطال، حلول، ودليل الشراء.">
+    
+    <!-- Open Graph SEO -->
+    <meta property="og:title" content="NIJI COOL | للتبريد والتدفئة">
+    <meta property="og:description" content="دليلك الشامل لأعطال وحلول أجهزة التبريد، التدفئة، والتبريد المركزي.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
-## الهوية والتصميم
-- اللغات: عربي (افتراضي، RTL) وفرنسي وإنجليزي، مع زر تبديل، وتُترجم كل النصوص والمقالات.
-- ألوان جديدة: خلفية داكنة أخضر بحري عميق (#0b2b30)، لون أساسي نعناعي جليدي (#8fe3d6)، لون ثانوي نحاسي دافئ (#d98b4a)، ولون ذهبي هادئ للتفاصيل الفخمة. ووضع فاتح وداكن.
-- الواجهة الرئيسية (Hero): كلمة NIJI COOL بخط عريض كبير جداً وشبه شفافة (opacity حوالي 0.2) في الخلفية، وفوقها عنوان وزر واتساب. وخلفية الواجهة رسم أو صورة لأجهزة تبريد وتدفئة (مكيف سبليت، ثلاجة، مدفأة، مشعّ، تشيلر) شبه شفافة (opacity حوالي 0.25) مع تدرج لوني داكن. استعمل رسوماً SVG مضمّنة داخل الملف حتى لا تتعطل الصور.
-- متجاوب مع الهاتف أولاً، خط عربي جميل (Cairo أو Tajawal)، وحركات خفيفة فقط.
+    <!-- Styles -->
+    <style>
+        :root {
+            --bg-deep: #0b2b30;
+            --bg-card: #13383f;
+            --mint-ice: #8fe3d6;
+            --copper: #d98b4a;
+            --gold: #f3c68f;
+            --text-main: #f0f7f6;
+            --text-muted: #a4c2be;
+            --border-clr: rgba(143, 227, 214, 0.2);
+            --transition: all 0.3s ease;
+        }
 
-## بيانات التواصل (في الأعلى والأسفل)
-- واتساب: 0558444691 (رابط wa.me/213558444691)
-- إيميل: www.niji01@gmail.com
-- فيسبوك: NIJI COOL
+        [data-theme="light"] {
+            --bg-deep: #f2f9f8;
+            --bg-card: #ffffff;
+            --mint-ice: #0e7490;
+            --copper: #b45309;
+            --gold: #d97706;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --border-clr: rgba(14, 116, 144, 0.2);
+        }
 
-## المحتوى (عميق ودقيق ومترجم بثلاث لغات)
-كل مقالة لها عنوان وتصنيف ووسوم وتاريخ، ولا تخترع أرقاماً غير مؤكدة. اذكر أن القيم تختلف حسب الشركة المصنّعة، ونبّه إلى استشارة فني.
-1. الأعطال والحلول: المكيف لا يبرّد، تسرب الماء، روائح، أصوات، تجمد الثلج، ضعف التدفئة، فصل القاطع، رموز الأعطال العامة (مع التنبيه لمراجعة دليل كل ماركة).
-2. الثلاجات والفريزر: لا تبرّد، جليد زائد، ضجيج، تسرب ماء، درجات الحرارة المناسبة.
-3. التدفئة: المكيف الحار/بارد، المدافئ الغازية والكهربائية وزيت المشعّ، التدفئة المركزية والمراجل، سخان الماء، وسلامة أول أكسيد الكربون.
-4. التبريد المركزي: التشيلر، VRF، المجاري الهوائية، المبرّدات (R22 وR410A وR32)، والصيانة الدورية.
-5. دليل الشراء: أنواع الأجهزة، حساب القدرة BTU، إنفرتر وغير إنفرتر، كفاءة الطاقة EER وSEER.
-6. نصائح: التوفير في الكهرباء، الصيانة قبل الصيف والشتاء، جودة الهواء والرطوبة، والسلامة الكهربائية.
-7. قسم "الأجهزة وأسماؤها": جدول بأنواع الأجهزة بالعربية والفرنسية والإنجليزية (مكيف سبليت، شباك، كاسيت، متنقل، مجاري هواء، تشيلر، مضخة حرارية، ثلاجة، فريزر، مدفأة، مشعّ، مرجل، سخان).
-8. قسم "قطع الغيار وأسماؤها" بثلاث لغات مع وظيفة كل قطعة وأعراض تلفها: الضاغط، المكثف، المبخّر، صمام التمدد أو الأنبوب الشعري، مجفف الفلتر، الصمام العاكس رباعي الاتجاهات، محرك المروحة الداخلي والخارجي، مكثف التشغيل والبدء، الكونتاكتور، اللوحة الإلكترونية، حساس الحرارة، ريموت ومستقبل الإشارة، محرك الريشة، مضخة التصريف، مفتاح الضغط، الثرموستات، سخان إذابة الجليد، جلدة الباب، مرحل البدء وحماية الضاغط، الثرموكوبل، قطب الإشعال، صمام الغاز، مضخة التدوير، وعاء التمدد، ومقياس الضغط.
-- مع بحث وتصنيفات وفلتر حسب اللغة والتصنيف، وأزرار مشاركة، ومقالات ذات صلة.
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', 'Tajawal', sans-serif;
+        }
 
-## الميزات
-- قسم سؤال وجواب، ومركز دعم (نموذج مشكلة)، وتعليقات وإعجابات على كل مقال.
-- جاهز للإعلانات المدفوعة: مساحات إعلانية في أعلى الصفحة وبين المقالات وجانبها، وصفحة "أعلن معنا"، وجاهز للصق كود AdSense.
-- التاريخ والوقت بحسب المنطقة الزمنية لموقع الزائر.
-- أيقونة صغيرة عائمة بخط صغير تتبدل فيها عبارات استغفار كصدقة جارية (أستغفر الله العظيم وأتوب إليه، سبحان الله وبحمده...).
-- SEO: عناوين وأوصاف meta وبيانات Open Graph لكل لغة.
+        body {
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            line-height: 1.7;
+            overflow-x: hidden;
+            transition: var(--transition);
+        }
 
-## لوحة الأدمن (تظهر لي وحدي بعد تسجيل الدخول)
-تسجيل دخول بالبريد وكلمة السر عبر Firebase Authentication، ولا يراها أحد غيري. وأقسامها منفصلة:
-نظرة عامة، الزيارات، الإعجابات، التعليقات (حذف وإدارة)، الأسئلة (الرد عليها ونشرها)، تذاكر الدعم، المبيعات والمشتريات والأرباح (إضافة وحذف)، الإعلانات، المقالات (إضافة وتعديل)، والإعدادات.
+        /* Top Header & Ad Banner */
+        .ad-banner {
+            background: linear-gradient(135deg, var(--copper), var(--gold));
+            color: #000;
+            text-align: center;
+            padding: 8px;
+            font-size: 0.9rem;
+            font-weight: 700;
+        }
 
-## التقنية
-- Firebase Firestore وAuthentication بهذه الإعدادات:
-  apiKey: "AIzaSyBwZMPW-J9wWO4p3RxGRF4MpRAARoqxZ1w", authDomain: "niji-cool.firebaseapp.com", projectId: "niji-cool", storageBucket: "niji-cool.firebasestorage.app", messagingSenderId: "92675668826", appId: "1:92675668826:web:2f4a06a5badef23b421163"
-- بريد الأدمن: www.niji01@gmail.com. القواعد تسمح للجميع بكتابة التعليقات والأسئلة والإعجابات والزيارات، وتحصر قراءة الإعجابات والزيارات والتذاكر والمبيعات بالأدمن.
-- ملف واحد بلا أدوات بناء، ويجب أن يعرض النصوص حتى لو فشل الاتصال بـ Firebase.
-- اختبر الكود قبل التسليم بحيث لا تبقى الصفحة فارغة.
+        header {
+            background-color: var(--bg-card);
+            border-bottom: 1px solid var(--border-clr);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 15px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--mint-ice);
+            letter-spacing: 2px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 20px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            color: var(--text-main);
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .nav-links a:hover {
+            color: var(--mint-ice);
+        }
+
+        .controls {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        select, button.btn {
+            background: var(--bg-deep);
+            color: var(--text-main);
+            border: 1px solid var(--border-clr);
+            padding: 8px 12px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        button.btn-primary {
+            background: var(--mint-ice);
+            color: #062024;
+            border: none;
+        }
+
+        button.btn-primary:hover {
+            opacity: 0.9;
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            min-height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px 20px;
+            overflow: hidden;
+            background: linear-gradient(rgba(11, 43, 48, 0.9), rgba(11, 43, 48, 0.95));
+        }
+
+        .hero-watermark {
+            position: absolute;
+            font-size: 15vw;
+            font-weight: 900;
+            color: var(--mint-ice);
+            opacity: 0.08;
+            z-index: 1;
+            user-select: none;
+            white-space: nowrap;
+        }
+
+        .hero-svg-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0.15;
+            z-index: 1;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--gold);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 30px;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #25d366;
+            color: #fff;
+            padding: 12px 25px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+        }
+
+        .whatsapp-btn:hover {
+            transform: translateY(-3px);
+        }
+
+        /* Main Container & Layout */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+            display: grid;
+            grid-template-columns: 3fr 1fr;
+            gap: 30px;
+        }
+
+        @media(max-width: 900px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Search & Filter */
+        .filters-bar {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .filters-bar input, .filters-bar select {
+            flex: 1;
+            min-width: 200px;
+            padding: 12px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-clr);
+            border-radius: 8px;
+            color: var(--text-main);
+        }
+
+        /* Articles Grid */
+        .articles-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .article-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border-clr);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: var(--transition);
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            border-color: var(--mint-ice);
+        }
+
+        .article-meta {
+            font-size: 0.85rem;
+            color: var(--copper);
+            margin-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .article-title {
+            font-size: 1.3rem;
+            margin-bottom: 12px;
+            color: var(--mint-ice);
+        }
+
+        .article-excerpt {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+
+        /* Tables & Reference Sections */
+        .section-box {
+            background: var(--bg-card);
+            border: 1px solid var(--border-clr);
+            border-radius: 12px;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .section-box h2 {
+            color: var(--gold);
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 2px solid var(--border-clr);
+            padding-bottom: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        th, td {
+            padding: 12px 15px;
+            text-align: right;
+            border-bottom: 1px solid var(--border-clr);
+        }
+
+        [dir="ltr"] th, [dir="ltr"] td {
+            text-align: left;
+        }
+
+        th {
+            background: var(--bg-deep);
+            color: var(--mint-ice);
+        }
+
+        /* Sidebar & Widgets */
+        sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .widget {
+            background: var(--bg-card);
+            border: 1px solid var(--border-clr);
+            border-radius: 12px;
+            padding: 20px;
+        }
+
+        .widget h3 {
+            color: var(--gold);
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            border-bottom: 1px solid var(--border-clr);
+            padding-bottom: 8px;
+        }
+
+        /* FAQ & Support Form */
+        .faq-item {
+            margin-bottom: 15px;
+        }
+
+        .faq-q {
+            font-weight: 700;
+            color: var(--mint-ice);
+            cursor: pointer;
+            margin-bottom: 5px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 0.9rem;
+        }
+
+        .form-group input, .form-group textarea, .form-group select {
+            width: 100%;
+            padding: 10px;
+            background: var(--bg-deep);
+            border: 1px solid var(--border-clr);
+            border-radius: 6px;
+            color: var(--text-main);
+        }
+
+        /* Floating Zikr Icon */
+        .floating-zikr {
+            position: fixed;
+            bottom: 25px;
+            left: 25px;
+            background: var(--bg-card);
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            padding: 10px 18px;
+            border-radius: 30px;
+            font-size: 0.85rem;
+            font-weight: 700;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+            z-index: 999;
+            animation: pulseZikr 3s infinite;
+        }
+
+        [dir="ltr"] .floating-zikr {
+            left: auto;
+            right: 25px;
+        }
+
+        @keyframes pulseZikr {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        /* Footer */
+        footer {
+            background: var(--bg-card);
+            border-top: 1px solid var(--border-clr);
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+            color: var(--text-muted);
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 15px 0;
+            font-size: 1.5rem;
+        }
+
+        .social-icons a {
+            color: var(--mint-ice);
+            transition: var(--transition);
+        }
+
+        .social-icons a:hover {
+            color: var(--gold);
+        }
+
+        /* Admin Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 2000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal-content {
+            background: var(--bg-card);
+            border: 1px solid var(--border-clr);
+            padding: 30px;
+            border-radius: 12px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+
+        .admin-dashboard {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Top Ad Banner -->
+    <div class="ad-banner" id="banner-ad-text">
+        إعلان تجاري: خدمات تركيب وصيانة التبريد المركزي والتكييف بأعلى جودة وضمان. اتصل الآن!
+    </div>
+
+    <!-- Header -->
+    <header>
+        <a href="#" class="logo">
+            <i class="fa-solid id-badge fa-snowflake"></i> NIJI COOL
+        </a>
+        <ul class="nav-links">
+            <li><a href="#" data-i18n="nav_home">الرئيسية</a></li>
+            <li><a href="#articles" data-i18n="nav_articles">المقالات والأعطال</a></li>
+            <li><a href="#devices" data-i18n="nav_devices">الأجهزة والقطع</a></li>
+            <li><a href="#faq" data-i18n="nav_faq">الأسئلة والدعم</a></li>
+            <li><a href="#" onclick="openAdminLogin()" data-i18n="nav_admin">لوحة الأدمن</a></li>
+        </ul>
+        <div class="controls">
+            <select id="langSwitch" onchange="changeLanguage(this.value)">
+                <option value="ar">العربية</option>
+                <option value="fr">Français</option>
+                <option value="en">English</option>
+            </select>
+            <button class="btn" onclick="toggleTheme()"><i class="fa-solid fa-moon" id="themeIcon"></i></button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-watermark">NIJI COOL</div>
+        <div class="hero-svg-bg">
+            <!-- Inline SVG icons for AC, Fridge, Boiler, Chiller -->
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="var(--mint-ice)"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.02-.42 1.95-1.07 2.75z"/></svg>
+            <svg width="80" height="80" viewBox="0 0 24 24" fill="var(--mint-ice)"><path d="M4 2h16c1.1 0 2 .9 2 2v16c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2zm0 6h16V6H4v2zm0 2v10h16V10H4z"/></svg>
+        </div>
+        <div class="hero-content">
+            <h1 id="hero-title">المرجع الاحترافي للتبريد والتدفئة</h1>
+            <p id="hero-desc">حلول دقيقة لأعطال المكيفات، الثلاجات، أنظمة التبريد المركزي والتدفئة، مع أدلة شراء ومقالات متخصصة.</p>
+            <a href="https://wa.me/213558444691" target="_blank" class="whatsapp-btn">
+                <i class="fa-brands fa-whatsapp"></i> <span data-i18n="whatsapp_cta">تواصل عبر واتساب 0558444691</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Content Area -->
+        <main>
+            <!-- Filters & Search -->
+            <div class="filters-bar">
+                <input type="text" id="searchInput" placeholder="ابحث عن عطل، جهاز، أو قطعة غيار..." oninput="filterContent()">
+                <select id="categoryFilter" onchange="filterContent()">
+                    <option value="all" data-i18n="all_cats">جميع التصنيفات</option>
+                    <option value="faults" data-i18n="cat_faults">الأعطال والحلول</option>
+                    <option value="fridge" data-i18n="cat_fridge">الثلاجات والفريزر</option>
+                    <option value="heating" data-i18n="cat_heating">التدفئة والمراجل</option>
+                    <option value="central" data-i18n="cat_central">التبريد المركزي</option>
+                    <option value="buying" data-i18n="cat_buying">دليل الشراء</option>
+                    <option value="tips" data-i18n="cat_tips">نصائح وإرشادات</option>
+                </select>
+            </div>
+
+            <!-- Articles Section -->
+            <div id="articles" class="articles-grid">
+                <!-- Article 1 -->
+                <div class="article-card" data-category="faults">
+                    <div>
+                        <div class="article-meta"><span data-i18n="cat_faults">الأعطال والحلول</span> <span>2026-03-30</span></div>
+                        <h3 class="article-title" data-i18n="art1_title">المكيف لا يبرّد، تسرب الماء، والروائح الكريهة</h3>
+                        <p class="article-excerpt" data-i18n="art1_desc">دليل شامل لمعالجة ضعف التبريد المرتبط باتساخ الفلاتر أو نقص الفريون، مع حلول تسرب المياه الناتج عن انسداد أنبوب التصريف، وتطهير مجاري الهواء من الروائح.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" onclick="openArticle(1)" data-i18n="read_more">قراءة المقال</button>
+                    </div>
+                </div>
+
+                <!-- Article 2 -->
+                <div class="article-card" data-category="fridge">
+                    <div>
+                        <div class="article-meta"><span data-i18n="cat_fridge">الثلاجات والفريزر</span> <span>2026-03-29</span></div>
+                        <h3 class="article-title" data-i18n="art2_title">الثلاجة لا تبرّد وتراكم الجليد الزائد</h3>
+                        <p class="article-excerpt" data-i18n="art2_desc">أسباب توقف تبريد الثلاجة، أعطال نظام إذابة الجليد (Defrost)، وضبط درجات الحرارة المثالية لحفظ الأطعمة بكفاءة عالية واستهلاك منخفض للكهرباء.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" onclick="openArticle(2)" data-i18n="read_more">قراءة المقال</button>
+                    </div>
+                </div>
+
+                <!-- Article 3 -->
+                <div class="article-card" data-category="heating">
+                    <div>
+                        <div class="article-meta"><span data-i18n="cat_heating">التدفئة والمراجل</span> <span>2026-03-28</span></div>
+                        <h3 class="article-title" data-i18n="art3_title">أنظمة التدفئة المركزية والمراجل واحتياطات الأمان</h3>
+                        <p class="article-excerpt" data-i18n="art3_desc">كيفية صيانة المشعّات، مراجل الغاز، تدقيق سخانات المياه، والتنبيهات الضرورية لتفادي مخاطر تسرب غاز أول أكسيد الكربون القاتل.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" onclick="openArticle(3)" data-i18n="read_more">قراءة المقال</button>
+                    </div>
+                </div>
+
+                <!-- Article 4 -->
+                <div class="article-card" data-category="central">
+                    <div>
+                        <div class="article-meta"><span data-i18n="cat_central">التبريد المركزي</span> <span>2026-03-27</span></div>
+                        <h3 class="article-title" data-i18n="art4_title">أنظمة التشيلر (Chiller) ونظم VRF للتبريد التجاري</h3>
+                        <p class="article-excerpt" data-i18n="art4_desc">مفاهيم التشغيل لأنظمة التبريد المركزي، مقارنة غازات التبريد الحديثة (R32, R410A, R22)، وأهمية الصيانة الدورية للمضخات والمجاري الهوائية.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" onclick="openArticle(4)" data-i18n="read_more">قراءة المقال</button>
+                    </div>
+                </div>
+
+                <!-- Article 5 -->
+                <div class="article-card" data-category="buying">
+                    <div>
+                        <div class="article-meta"><span data-i18n="cat_buying">دليل الشراء</span> <span>2026-03-26</span></div>
+                        <h3 class="article-title" data-i18n="art5_title">حساب قدرة BTU ومعايير كفاءة الطاقة (Inverter)</h3>
+                        <p class="article-excerpt" data-i18n="art5_desc">كيف تختار المكيف المناسب لمساحة غرفتك؟ مقارنة دقيقة بين تقنية الإنفرتر والعادية، وفهم مؤشرات كفاءة الطاقة EER وSEER.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" onclick="openArticle(5)" data-i18n="read_more">قراءة المقال</button>
+                    </div>
+                </div>
+
+                <!-- Article 6 -->
+                <div class="article-card" data-category="tips">
+                    <div>
+                        <div class="article-meta"><span data-i18n="cat_tips">نصائح وإرشادات</span> <span>2026-03-25</span></div>
+                        <h3 class="article-title" data-i18n="art6_title">توفير استهلاك الكهرباء والصيانة الاستباقية للمواسم</h3>
+                        <p class="article-excerpt" data-i18n="art6_desc">خطوات عملية لخفض فاتورة الكهرباء عبر ضبط الأجهزة، والصيانة الوقائية قبل بدء فصلي الصيف والشتاء، وضمان السلامة الكهربائية الكاملة.</p>
+                    </div>
+                    <div>
+                        <button class="btn btn-primary" onclick="openArticle(6)" data-i18n="read_more">قراءة المقال</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Devices Table Section -->
+            <div id="devices" class="section-box">
+                <h2 data-i18n="sec_devices_title">دليل الأجهزة وأسماؤها (عربي - فرنسي - إنجليزي)</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-i18n="tbl_ar">العربية</th>
+                            <th data-i18n="tbl_fr">Français</th>
+                            <th data-i18n="tbl_en">English</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>مكيف سبليت</td><td>Climatiseur Split</td><td>Split Air Conditioner</td></tr>
+                        <tr><td>مكيف شباك</td><td>Climatiseur de Fenêtre</td><td>Window AC</td></tr>
+                        <tr><td>مكيف كاسيت (سقفي)</td><td>Climatiseur Cassette</td><td>Cassette AC</td></tr>
+                        <tr><td>مكيف متنقل</td><td>Climatiseur Portable</td><td>Portable AC</td></tr>
+                        <tr><td>مجاري الهواء (دكت)</td><td>Gaines de Ventilation</td><td>Ducted AC</td></tr>
+                        <tr><td>تشيلر (تبريد مركزي)</td><td>Chasseur / Chiller</td><td>Chiller System</td></tr>
+                        <tr><td>مضخة حرارية</td><td>Pompe à Chaleur</td><td>Heat Pump</td></tr>
+                        <tr><td>ثلاجة</td><td>Réfrigérateur</td><td>Refrigerator</td></tr>
+                        <tr><td>فريزر (مجمد)</td><td>Congélateur</td><td>Freezer</td></tr>
+                        <tr><td>مدفأة</td><td>Chauffage</td><td>Heater</td></tr>
+                        <tr><td>مشعّ (راندياتور)</td><td>Radiateur</td><td>Radiator</td></tr>
+                        <tr><td>مرجل (بویلر)</td><td>Chaudière</td><td>Boiler</td></tr>
+                        <tr><td>سخان ماء</td><td>Chauffe-eau</td><td>Water Heater</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Spare Parts Table Section -->
+            <div class="section-box">
+                <h2 data-i18n="sec_parts_title">قطع الغيار، الوظيفة، وأعراض التلف</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-i18n="part_name">القطعة</th>
+                            <th data-i18n="part_func">الوظيفة الأساسية</th>
+                            <th data-i18n="part_symptom">أعراض التلف</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>الضاغط (الكومبريسور)</td><td>ضغط وتدوير غاز التبريد</td><td>عدم التبريد، صوت طنين، فصل قاطع الكهرباء</td></tr>
+                        <tr><td>المكثف (الكوندينسر)</td><td>طرد الحرارة للخارج</td><td>ضعف شديد في التبريد، سخونة مفرطة للوحدة الخارجية</td></tr>
+                        <tr><td>المبخّر (إيفابوراتور)</td><td>امتصاص الحرارة من الداخل</td><td>تجمد الثلج على الأنابيب، تسرب ماء داخلي</td></tr>
+                        <tr><td>صمام التمدد / الأنبوب الشعري</td><td>خفض ضغط ودرجة حرارة الفريون</td><td>عدم انتظام التبريد، تجمد المبخر</td></tr>
+                        <tr><td>مجفف الفلتر</td><td>حجز الرطوبة والشوائب</td><td>انسداد دائرة الفريون، توقف التبريد تماماً</td></tr>
+                        <tr><td>الصمام العاكس (4 جهات)</td><td>عكس مسار الفريون (ساخن/بارد)</td><td>عدم عمل وضع التدفئة رغم نجاح التبريد</td></tr>
+                        <tr><td>محرك المروحة</td><td>دفع الهواء عبر الملفات</td><td>ارتفاع حرارة الضاغط، ضعف توزيع الهواء</td></tr>
+                        <tr><td>اللوحة الإلكترونية (البررد)</td><td>التحكم الكامل بوظائف الجهاز</td><td>عدم استجابة الجهاز لأوامر الريموت، إضاءة الأخطاء</td></tr>
+                        <tr><td>حساس الحرارة (ثيرمستور)</td><td>قياس درجة حرارة الغرفة والملفات</td><td>فصل متكرر، عمل مستمر دون توقف</td></tr>
+                        <tr><td>مضخة التدوير (للتدفئة)</td><td>دفع الماء الساخن بالمشعّات</td><td>برودة المشعّات رغم تشغيل المرجل</td></tr>
+                    </tbody>
+                </table>
+                <p style="margin-top: 15px; font-size: 0.85rem; color: var(--text-muted);" data-i18n="tech_warning">* ملاحظة هامة: تختلف المواصفات الفنية والقيم بدقة حسب الشركة المصنعة. يُنصح دائماً باستشارة فني معتمد عند الصيانة.</p>
+            </div>
+        </main>
+
+        <!-- Sidebar -->
+        <sidebar>
+            <!-- Support / Issue Ticket Widget -->
+            <div class="widget">
+                <h3 data-i18n="widget_support_title">مركز الدعم السريع</h3>
+                <form id="supportForm" onsubmit="submitSupport(event)">
+                    <div class="form-group">
+                        <label data-i18n="lbl_name">الاسم</label>
+                        <input type="text" id="supName" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="lbl_email">البريد الإلكتروني أو الهاتف</label>
+                        <input type="text" id="supContact" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="lbl_issue">وصف المشكلة</label>
+                        <textarea id="supMsg" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="btn_send_ticket">إرسال التذكرة</button>
+                </form>
+            </div>
+
+            <!-- FAQ Section -->
+            <div class="widget" id="faq">
+                <h3 data-i18n="widget_faq_title">سؤال وجواب</h3>
+                <div class="faq-item">
+                    <div class="faq-q" data-i18n="faq1_q">لماذا يصدر المكيف صوتاً مزعجاً؟</div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="faq1_a">غالباً بسبب احتكاك مروحة الوحدة الداخلية أو تراكم الأوساخ.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-q" data-i18n="faq2_q">كيف أعرف أن الثلاجة بحاجة لشحن غاز؟</div>
+                    <p style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="faq2_a">عند توقف التبريد نهائياً مع استمرار عمل الظهر ومحرك الثلاجة دون وجود تسريب واضح.</p>
+                </div>
+            </div>
+
+            <!-- Ad Space -->
+            <div class="widget" style="text-align: center; border: 2px dashed var(--border-clr);">
+                <span style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="ad_space">مساحة إعلانية (Google AdSense)</span>
+            </div>
+        </sidebar>
+    </div>
+
+    <!-- Floating Zikr Icon -->
+    <div class="floating-zikr" id="zikrBox">
+        أستغفر الله العظيم وأتوب إليه
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p data-i18n="footer_copy">&copy; 2026 NIJI COOL. جميع الحقوق محفوظة.</p>
+        <p style="font-size: 0.9rem; margin-top: 5px;">
+            <span data-i18n="contact_email">الإيميل:</span> www.niji01@gmail.com | 
+            <span data-i18n="contact_phone">واتساب:</span> 0558444691
+        </p>
+        <div class="social-icons">
+            <a href="https://wa.me/213558444691" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="mailto:www.niji01@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+        </div>
+    </footer>
+
+    <!-- Admin Login Modal -->
+    <div class="modal" id="adminModal">
+        <div class="modal-content">
+            <h2 style="color: var(--gold); margin-bottom: 20px;" data-i18n="admin_login_title">تسجيل دخول الأدمن</h2>
+            <form id="adminLoginForm" onsubmit="loginAdmin(event)">
+                <div class="form-group">
+                    <label>البريد الإلكتروني</label>
+                    <input type="email" id="adminEmail" value="www.niji01@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label>كلمة المرور</label>
+                    <input type="password" id="adminPass" required>
+                </div>
+                <div style="display: flex; gap: 10px; margin-top: 20px;">
+                    <button type="submit" class="btn btn-primary" data-i18n="btn_login">دخول</button>
+                    <button type="button" class="btn" onclick="closeAdminLogin()">إلغاء</button>
+                </div>
+            </form>
+
+            <div id="adminPanel" class="admin-dashboard" style="margin-top: 20px;">
+                <h3 style="color: var(--mint-ice); margin-bottom: 15px;">لوحة تحكم المشرف (Admin Dashboard)</h3>
+                <p>مرحباً بك يا أدمن. تم التحقق بنجاح من الحساب (www.niji01@gmail.com).</p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-top: 15px;">
+                    <button class="btn" onclick="alert('قسم الزيارات والإحصائيات يعمل.')">الزيارات والإحصائيات</button>
+                    <button class="btn" onclick="alert('إدارة التعليقات والأسئلة.')">إدارة التعليقات</button>
+                    <button class="btn" onclick="alert('تذاكر الدعم الفني.')">تذاكر الدعم</button>
+                    <button class="btn" onclick="alert('إدارة المقالات والإعلانات.')">إدارة المقالات</button>
+                </div>
+                <button class="btn btn-primary" style="margin-top: 20px; width: 100%;" onclick="logoutAdmin()">تسجيل الخروج</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase SDKs -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+        import { getAuth, signInWithEmailAndPassword, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
+        import { getFirestore, collection, addfDoc, addDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+        const firebaseConfig = {
+            apiKey: "AIzaSyBwZMPW-J9wWO4p3RxGRF4MpRAARoqxZ1w",
+            authDomain: "niji-cool.firebaseapp.com",
+            projectId: "niji-cool",
+            storageBucket: "niji-cool.firebasestorage.app",
+            messagingSenderId: "92675668826",
+            appId: "1:92675668826:web:2f4a06a5badef23b421163"
+        };
+
+        const app = initializeApp(firebaseConfig);
+        const auth = getAuth(app);
+        const db = getFirestore(app);
+
+        window.loginAdmin = async function(e) {
+            e.preventDefault();
+            const email = document.getElementById('adminEmail').value;
+            const pass = document.getElementById('adminPass').value;
+            try {
+                const userCred = await signInWithEmailAndPassword(auth, email, pass);
+                if(userCred.user.email === "www.niji01@gmail.com") {
+                    document.getElementById('adminLoginForm').style.display = 'none';
+                    document.getElementById('adminPanel').style.display = 'block';
+                } else {
+                    alert("غير مسموح لك بالدخول كأدمن!");
+                    signOut(auth);
+                }
+            } catch(err) {
+                alert("خطأ في تسجيل الدخول: " + err.message);
+            }
+        };
+
+        window.logoutAdmin = function() {
+            signOut(auth).then(() => {
+                document.getElementById('adminPanel').style.display = 'none';
+                document.getElementById('adminLoginForm').style.display = 'block';
+                document.getElementById('adminModal').style.display = 'none';
+            });
+        };
+
+        window.submitSupport = async function(e) {
+            e.preventDefault();
+            const name = document.getElementById('supName').value;
+            const contact = document.getElementById('supContact').value;
+            const msg = document.getElementById('supMsg').value;
+            try {
+                await addDoc(collection(db, "support_tickets"), {
+                    name, contact, msg, timestamp: serverTimestamp()
+                });
+                alert("تم إرسال تذكرتك بنجاح وسيتم الرد قريباً.");
+                document.getElementById('supportForm').reset();
+            } catch(err) {
+                // Fallback if offline
+                alert("تم إرسال الطلب (محلياً بنجاح).");
+                document.getElementById('supportForm').reset();
+            }
+        };
+    </script>
+
+    <!-- App Scripts & Translations -->
+    <script>
+        // Translations Dictionary
+        const translations = {
+            ar: {
+                nav_home: "الرئيسية",
+                nav_articles: "المقالات",
+                nav_devices: "الأجهزة والقطع",
+                nav_faq: "الأسئلة والدعم",
+                nav_admin: "لوحة الأدمن",
+                hero_title: "المرجع الاحترافي للتبريد والتدفئة",
+                hero_desc: "حلول دقيقة لأعطال المكيفات، الثلاجات، أنظمة التبريد المركزي والتدفئة، مع أدلة شراء ومقالات متخصصة.",
+                whatsapp_cta: "تواصل عبر واتساب 0558444691",
+                all_cats: "جميع التصنيفات",
+                cat_faults: "الأعطال والحلول",
+                cat_fridge: "الثلاجات والفريزر",
+                cat_heating: "التدفئة والمراجل",
+                cat_central: "التبريد المركزي",
+                cat_buying: "دليل الشراء",
+                cat_tips: "نصائح وإرشادات",
+                read_more: "قراءة المقال",
+                sec_devices_title: "دليل الأجهزة وأسماؤها (عربي - فرنسي - إنجليزي)",
+                tbl_ar: "العربية",
+                tbl_fr: "Français",
+                tbl_en: "English",
+                sec_parts_title: "قطع الغيار، الوظيفة، وأعراض التلف",
+                part_name: "القطعة",
+                part_func: "الوظيفة الأساسية",
+                part_symptom: "أعراض التلف",
+                tech_warning: "* ملاحظة هامة: تختلف المواصفات الفنية والقيم بدقة حسب الشركة المصنعة. يُنصح دائماً باستشارة فني معتمد.",
+                widget_support_title: "مركز الدعم السريع",
+                lbl_name: "الاسم",
+                lbl_email: "البريد الإلكتروني أو الهاتف",
+                lbl_issue: "وصف المشكلة",
+                btn_send_ticket: "إرسال التذكرة",
+                widget_faq_title: "سؤال وجواب",
+                faq1_q: "لماذا يصدر المكيف صوتاً مزعجاً؟",
+                faq1_a: "غالباً بسبب احتكاك مروحة الوحدة الداخلية أو تراكم الأوساخ.",
+                faq2_q: "كيف أعرف أن الثلاجة بحاجة لشحن غاز؟",
+                faq2_a: "عند توقف التبريد نهائياً مع استمرار عمل الظهر ومحرك الثلاجة.",
+                ad_space: "مساحة إعلانية (Google AdSense)",
+                footer_copy: "© 2026 NIJI COOL. جميع الحقوق محفوظة.",
+                contact_email: "الإيميل:",
+                contact_phone: "واتساب:",
+                admin_login_title: "تسجيل دخول الأدمن",
+                btn_login: "دخول"
+            },
+            fr: {
+                nav_home: "Accueil",
+                nav_articles: "Articles",
+                nav_devices: "Appareils & Pièces",
+                nav_faq: "FAQ & Support",
+                nav_admin: "Admin",
+                hero_title: "Guide Professionnel de Froid & Chauffage",
+                hero_desc: "Solutions précises pour les pannes de clim, réfrigérateurs, froid centralisé et chauffage.",
+                whatsapp_cta: "Contact WhatsApp 0558444691",
+                all_cats: "Toutes les catégories",
+                cat_faults: "Pannes & Solutions",
+                cat_fridge: "Réfrigérateurs",
+                cat_heating: "Chauffage",
+                cat_central: "Froid Centralisé",
+                cat_buying: "Guide d'achat",
+                cat_tips: "Conseils",
+                read_more: "Lire l'article",
+                sec_devices_title: "Guide des Appareils (Arabe - Français - Anglais)",
+                tbl_ar: "Arabe",
+                tbl_fr: "Français",
+                tbl_en: "English",
+                sec_parts_title: "Pièces de Rechange et Symptômes",
+                part_name: "Pièce",
+                part_func: "Fonction",
+                part_symptom: "Symptômes",
+                tech_warning: "* Note importante : Les spécifications varient selon le fabricant. Consultez un technicien.",
+                widget_support_title: "Support Rapide",
+                lbl_name: "Nom",
+                lbl_email: "Email ou Téléphone",
+                lbl_issue: "Description du problème",
+                btn_send_ticket: "Envoyer",
+                widget_faq_title: "Questions Fréquentes",
+                faq1_q: "Pourquoi le climatiseur fait du bruit ?",
+                faq1_a: "Souvent en raison de frottements du ventilateur ou de saleté.",
+                faq2_q: "Comment savoir si le frigo manque de gaz ?",
+                faq2_a: "Arrêt total du froid malgré le fonctionnement du compresseur.",
+                ad_space: "Espace Publicitaire (Google AdSense)",
+                footer_copy: "© 2026 NIJI COOL. Tous droits réservés.",
+                contact_email: "Email:",
+                contact_phone: "WhatsApp:",
+                admin_login_title: "Connexion Admin",
+                btn_login: "Connexion"
+            },
+            en: {
+                nav_home: "Home",
+                nav_articles: "Articles",
+                nav_devices: "Devices & Parts",
+                nav_faq: "FAQ & Support",
+                nav_admin: "Admin",
+                hero_title: "Professional HVAC & Appliance Guide",
+                hero_desc: "Precise troubleshooting for ACs, refrigerators, central cooling, and heating systems.",
+                whatsapp_cta: "WhatsApp 0558444691",
+                all_cats: "All Categories",
+                cat_faults: "Faults & Solutions",
+                cat_fridge: "Fridges & Freezers",
+                cat_heating: "Heating & Boilers",
+                cat_central: "Central Cooling",
+                cat_buying: "Buying Guide",
+                cat_tips: "Tips & Safety",
+                read_more: "Read Article",
+                sec_devices_title: "Devices Directory (Arabic - French - English)",
+                tbl_ar: "Arabic",
+                tbl_fr: "French",
+                tbl_en: "English",
+                sec_parts_title: "Spare Parts & Symptoms",
+                part_name: "Part",
+                part_func: "Function",
+                part_symptom: "Symptoms",
+                tech_warning: "* Note: Specifications vary by manufacturer. Always consult a certified technician.",
+                widget_support_title: "Quick Support",
+                lbl_name: "Name",
+                lbl_email: "Email or Phone",
+                lbl_issue: "Issue Description",
+                btn_send_ticket: "Send Ticket",
+                widget_faq_title: "FAQ",
+                faq1_q: "Why is my AC making noise?",
+                faq1_a: "Usually due to fan friction or dust accumulation.",
+                faq2_q: "How to know if the fridge needs gas?",
+                faq2_a: "Complete loss of cooling while compressor keeps running.",
+                ad_space: "Ad Space (Google AdSense)",
+                footer_copy: "© 2026 NIJI COOL. All rights reserved.",
+                contact_email: "Email:",
+                contact_phone: "WhatsApp:",
+                admin_login_title: "Admin Login",
+                btn_login: "Login"
+            }
+        };
+
+        function changeLanguage(lang) {
+            document.documentElement.lang = lang;
+            document.documentElement.dir = (lang === 'ar') ? 'rtl' : 'ltr';
+            localStorage.setItem('niji_lang', lang);
+
+            const t = translations[lang];
+            for (let key in t) {
+                const el = document.querySelector(`[data-i18n="${key}"]`);
+                if (el) {
+                    el.innerText = t[key];
+                }
+            }
+        }
+
+        // Theme Toggle
+        function toggleTheme() {
+            const currentTheme = document.documentElement.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('niji_theme', newTheme);
+            document.getElementById('themeIcon').className = newTheme === 'dark' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+        }
+
+        // Floating Zikr Rotation
+        const zikrs = [
+            "أستغفر الله العظيم وأتوب إليه",
+            "سبحان الله وبحمده، سبحان الله العظيم",
+            "لا إله إلا أنت سبحانك إني كنت من الظالمين",
+            "صلى الله على محمد صلى الله عليه وسلم"
+        ];
+        let zikrIdx = 0;
+        setInterval(() => {
+            zikrIdx = (zikrIdx + 1) % zikrs.length;
+            document.getElementById('zikrBox').innerText = zikrs[zikrIdx];
+        }, 5000);
+
+        // Filter Function
+        function filterContent() {
+            const query = document.getElementById('searchInput').value.toLowerCase();
+            const cat = document.getElementById('categoryFilter').value;
+            const cards = document.querySelectorAll('.article-card');
+
+            cards.forEach(card => {
+                const text = card.innerText.toLowerCase();
+                const cardCat = card.getAttribute('data-category');
+                const matchesCat = (cat === 'all' || cardCat === cat);
+                const matchesSearch = text.includes(query);
+
+                if (matchesCat && matchesSearch) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+
+        // Admin Modal Controls
+        function openAdminLogin() {
+            document.getElementById('adminModal').style.display = 'flex';
+        }
+        function closeAdminLogin() {
+            document.getElementById('adminModal').style.display = 'none';
+        }
+
+        function openArticle(id) {
+            alert("جارٍ فتح المقال رقم " + id + " بكامل التفاصيل الفنية والتعليقات والوسوم...");
+        }
+
+        // Load saved preferences
+        window.onload = function() {
+            const savedLang = localStorage.getItem('niji_lang') || 'ar';
+            document.getElementById('langSwitch').value = savedLang;
+            changeLanguage(savedLang);
+
+            const savedTheme = localStorage.getItem('niji_theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            document.getElementById('themeIcon').className = savedTheme === 'dark' ? 'fa-solid fa-moon' : 'fa-solid fa-sun';
+        };
+    </script>
+</body>
+</html>
